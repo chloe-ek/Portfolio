@@ -29,8 +29,9 @@ const About = () => {
             </div>
             <div className="flex-1">
                 <p className="mb-10 max-w-2xl font-Ovo">
-                I enjoy building practical applications that solve real problems with clean, maintainable code.
-                I'm always looking to improve, learn new tools, and work on projects that make a difference.
+                I enjoy creating useful applications with clean, maintainable code.  
+                I'm always looking to grow, explore new tools, and contribute to meaningful projects.
+
                 </p>
                 <motion.ul
                 nitial={{ opacity: 0}}
@@ -40,7 +41,7 @@ const About = () => {
                     {infoList.map(({icon, iconDark, title, description}, index)=>(
                         <li
                         className='border-[0.5px] border-gray-400 rounded-xl p-6 cursor-pointer
-                         hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-black' 
+                         hover:bg-lightHover hover:-translate-y-1 duration-500 hover:shadow-md' 
                             key={index}>
                             <img src={icon} alt={title} className="w-7 mt-3"/>
                             <h3 className="my-4 font-semibold text-gray-700">{title}</h3>
@@ -49,7 +50,7 @@ const About = () => {
                     ))}
                 </motion.ul>
 
-                <h4 className="font-Ovo my-6 text-gray-700">Tools I use</h4>
+                <h4 className="font-Ovo my-4 text-gray-700">Workflow Tools</h4>
 
                 <motion.ul
                 nitial={{ opacity: 0}}

@@ -24,9 +24,8 @@ const Work = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1}}
         transition={{ duration: 0.5, delay: 0.7 }} 
-        className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
-        Welcome to my portfolio! Here, you'll find a collection of my latest projects that showcase my skills and creativity.
-        Each piece reflects my dedication to quality and innovation in web development. I hope you enjoy exploring my work as much as I enjoyed creating it!
+        className="text-center max-w-3xl mx-auto mt-5 mb-20 font-Ovo">
+        A collection of projects where I applied what I’ve learned — from full-stack web apps to mobile prototypes.
         </motion.p>
 
 

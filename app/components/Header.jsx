@@ -32,9 +32,8 @@ const Header = () => {
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.7 }}
             className="max-w-3xl mx-auto font-Ovo">
-            I enjoy building practical applications that solve real problems with clean, maintainable code.
-                        
-            I'm always looking to improve, learn new tools, and work on projects that make a difference.</motion.p>
+            I build web and mobile applications with a focus on clean code and real-world functionality.
+            </motion.p>
           <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
             <motion.a 
               initial={{ y: 30, opacity: 0}}

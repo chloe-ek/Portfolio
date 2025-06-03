@@ -1,32 +1,32 @@
-import { assets, serviceData } from "@/assets/assets";
+import { serviceData } from "@/assets/assets";
 import { motion } from "motion/react";
 
 
-const Services = () => {
+const Skills = () => {
   return (
     <motion.div
     initial={{ opacity: 0}}
     whileInView={{ opacity: 1 }}
     transition={{ duration: 1 }}
-    id='services' className="w-full px-[12%] py-10 scroll-mt-20">
+    id='skills' className="w-full px-[12%] py-10 scroll-mt-20">
         <motion.h4
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.2 }}
-        className="text-center mb-2 text-lg font-Ovo">What I offer</motion.h4>
+        className="text-center mb-2 text-lg font-Ovo">What I use</motion.h4>
         <motion.h2
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.5 }}
-        className="text-center text-5xl font-Ovo">My Services</motion.h2>
+        className="text-center text-5xl font-Ovo">My Toolbox </motion.h2>
 
         <motion.p
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1}}
         transition={{ duration: 0.5, delay: 0.7 }}
-        className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
-                I enjoy building practical applications that solve real problems with clean, maintainable code.
-                I'm always looking to improve, learn new tools, and work on projects that make a difference.
+        className="text-center max-w-3xl mx-auto mt-5 mb-20 font-Ovo">
+          These are the tools I've used in personal and team projects throughout my development journey.
+
         </motion.p>
 
         <motion.div
@@ -38,14 +38,12 @@ const Services = () => {
                  <motion.div
                  whileHover={{scale : 1.05}} 
                  key={index} className="border border-gray-400 rounded-lg px-8 py-12
-                 hover:shadow-black  cursor-pointer hover:bg-lightHover hover:-translate-y-1
+                 hover:shadow-md  cursor-pointer hover:bg-lightHover hover:-translate-y-1
                  duration-500">
                     <img src={icon} alt='' className="w-10"/>
                     <h3 className="text-lg my-4 text-gray-700">{title}</h3>
                     <p className="text-sm leading-5 text-gray-600">{description}</p>
-                    <a href={link} className="flex items-center gap-2 text-sm mt-5">
-                        Read more <img alt="" src={assets.right_arrow} className="w-4"/>
-                    </a>
+                    
                  </motion.div>
             ))}
 
@@ -54,4 +52,4 @@ const Services = () => {
   )
 }
 
-export default Services
+export default Skills

@@ -4,7 +4,7 @@ import Contact from "@/app/components/Contact";
 import Footer from "@/app/components/Footer";
 import Header from "@/app/components/Header";
 import Navbar from "@/app/components/Navbar";
-import Services from "@/app/components/Services";
+import Skills from "@/app/components/Skills";
 import Work from "@/app/components/Work";
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
     <Navbar />
     <Header />
     <About />
-    <Services />
+    <Skills />
     <Work />
     <Contact />
     <Footer />
