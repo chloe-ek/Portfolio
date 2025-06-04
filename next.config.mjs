@@ -8,7 +8,7 @@ const nextConfig = {
     unoptimized: true,
   },
   basePath: isProd ? '/Portfolio' : '', 
-  assetPrefix: isProd ? '/Portfolio/' : '',
+  assetPrefix: isProd ? '/Portfolio' : '',
 };
 
 export default nextConfig;
