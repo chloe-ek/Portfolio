@@ -37,7 +37,8 @@ export const assets = {
     right_arrow: `${base}/right-arrow.png`,
     send_icon: `${base}/send-icon.png`,
     right_arrow_bold: `${base}/right-arrow-bold.png`,
-    right_arrow_bold_dark: `${base}/right-arrow-bold-dark.png`
+    right_arrow_bold_dark: `${base}/right-arrow-bold-dark.png`,
+    github_icon: `${base}/github.png`,
 };
 
 export const workData = [
@@ -45,36 +46,50 @@ export const workData = [
         title: 'Tadpool',
         description: 'Dating App',
         bgImage: `${base}/tadpool.png`,
+        githubLink: 'https://github.com/chloe-ek/Tadpool-my-part',
+
     },
     {
         title: 'Real Estate',
         description: 'Web Site',
         bgImage: `${base}/realEstate.png`,
+        githubLink: 'https://github.com/chloe-ek/RealEstate_website',
+
     },
     {
         title: 'Chat App',
         description: 'Chat Web',
         bgImage: `${base}/chatapp.png`,
+        githubLink: 'https://github.com/chloe-ek/Chat-app',
+
     },
     {
         title: 'Assignment Tracker',
         description: 'Android App',
         bgImage: `${base}/AssignmentTracker.png`,
+        githubLink: 'https://github.com/chloe-ek/Assignment_tracker',
+
     },
     {
         title: 'Pennywise',
         description: 'Finance App',
         bgImage: `${base}/pennywise.png`,
+        githubLink: 'https://github.com/chloe-ek/pennywise',
+
     },
     {
         title: 'Dark Night Maze',
         description: 'JavaFX Game',
         bgImage: `${base}/darknightmaze.png`,
+        githubLink: 'https://github.com/chloe-ek/Dark_Night_Maze',
+
     },
     {
         title: 'Neighbourly',
         description: 'Community App',
         bgImage: `${base}/neighbourly.png`,
+        githubLink: 'https://comp1800-neighbourly.web.app',
+
     },
 ];
 
