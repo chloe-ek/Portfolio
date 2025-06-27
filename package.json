@@ -6,9 +6,7 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint",
-    "deploy": "gh-pages -d out --branch=gh-pages"
-  },
+    "lint": "next lint"  },
   "dependencies": {
     "autoprefixer": "^10.4.21",
     "motion": "^12.15.0",
