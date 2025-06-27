@@ -39,9 +39,19 @@ export const assets = {
     right_arrow_bold: `${base}/right-arrow-bold.png`,
     right_arrow_bold_dark: `${base}/right-arrow-bold-dark.png`,
     github_icon: `${base}/github.png`,
+    live1: `${base}/live1.png`,
+    live2: `${base}/live2.png`,
 };
 
 export const workData = [
+    {
+        title: 'Brats & Bavaria',
+        description: 'Car Event Website',
+        bgImage: `${base}/Bratsandbavaria.png`,
+        liveLink: 'https://bratsandbavaria.com',
+        githubLink: 'https://github.com/chloe-ek/Brats-bavaria',
+
+    },
     {
         title: 'Tadpool',
         description: 'Dating App',
@@ -53,6 +63,7 @@ export const workData = [
         title: 'Real Estate',
         description: 'Web Site',
         bgImage: `${base}/realEstate.png`,
+        liveLink: 'https://realestate-gek4.onrender.com/',
         githubLink: 'https://github.com/chloe-ek/RealEstate_website',
 
     },
@@ -60,6 +71,7 @@ export const workData = [
         title: 'Chat App',
         description: 'Chat Web',
         bgImage: `${base}/chatapp.png`,
+        liveLink: 'https://chat-app-mxjo.onrender.com',
         githubLink: 'https://github.com/chloe-ek/Chat-app',
 
     },
@@ -88,6 +100,7 @@ export const workData = [
         title: 'Neighbourly',
         description: 'Community App',
         bgImage: `${base}/neighbourly.png`,
+        liveLink: 'https://comp1800-neighbourly.web.app',
         githubLink: 'https://comp1800-neighbourly.web.app',
 
     },
