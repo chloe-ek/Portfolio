@@ -65,7 +65,7 @@ const Work = () => {
                           src={assets.live1}
                           alt="Live"
                           title="Live Demo"
-                          className="ml-2 w-5 h-5 opacity-100 inline-block hover:scale-110 transition"
+                          className="ml-1 w-5 h-5 opacity-100 inline-block hover:scale-110 transition"
                         />
                       )}
                     </h2>
