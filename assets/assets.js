@@ -1,4 +1,9 @@
-const base = process.env.NODE_ENV === 'production' ? '/Portfolio' : '';
+const isGithubPages =
+  typeof window !== 'undefined' &&
+  window.location.pathname.startsWith('/Portfolio');
+
+const base = isGithubPages ? '/Portfolio' : '';
+
 
 export const assets = {
     user_image: `${base}/profile.png`,
