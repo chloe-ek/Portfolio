@@ -50,71 +50,94 @@ export const assets = {
 
 export const workData = [
         {
-        title: 'DiVi (In Developement)',
-        description: 'Expense Tracker for shared expenses',
-        summary: 'Mobile-first shared expense tracking with real-time collaboration',
+        title: 'DiVi',
+        description: 'Shared Expense Tracker with Real-time Collaboration',
+        summary: 'Mobile-first expense splitting app with group management, receipt scanning, and automatic calculations',
         bgImage: `${base}/DIVI.png`,
         liveLink: 'https://divi-ai-4l5m.vercel.app/',
         githubLink: 'https://github.com/chloe-ek/Divi-Ai',
         technologies: ['TypeScript', 'Next.js', 'Supabase', 'CSS'],
-        category: 'Full Stack'
+        category: 'Full Stack',
+        status: 'In Development',
+        duration: 'In Development...',
+        teamSize: 'Solo Project',
+        impact: 'MVP with core splitting features completed'
     },
         {
-        title: 'PrepTalk AI (In Developement)',
-        description: 'AI-powered platform for preparing for mock interviews',
-        summary: 'Interactive AI interview practice platform with voice-based Q&A and personalized feedback',
+        title: 'PrepTalk AI',
+        description: 'AI-Powered Interview Practice Platform',
+        summary: 'Voice-interactive AI interview coach with personalized feedback, question analysis, and performance tracking',
         bgImage: `${base}/preptalk.png`,
         liveLink: 'https://prep-talk-ai-three.vercel.app/',
         githubLink: 'https://github.com/chloe-ek/PrepTalk_ai',
-        technologies: ['Next.js', 'Tailwind', 'Firebase' ,'Vapi'],
-        category: 'Full Stack'
+        technologies: ['Next.js', 'Tailwind CSS', 'Firebase', 'Vapi AI'],
+        category: 'Full Stack',
+        status: 'In Development',
+        duration: 'In Development...',
+        teamSize: 'Solo Project',
+        impact: 'Voice AI integration and real-time feedback system implemented'
     },
     {
         title: 'Brats & Bavaria',
-        description: 'Car enthusiast event registration and management system',
-        summary: 'End-to-end car event management platform with submission forms, admin dashboard, and automated payment processing',
+        description: 'Car Event Management Platform with Payment Processing',
+        summary: 'Production car enthusiast platform serving 200+ users with event registration, admin dashboard, and Stripe integration',
         bgImage: `${base}/Bratsandbavaria.png`,
         liveLink: 'https://bratsandbavaria.com',
         githubLink: 'https://github.com/chloe-ek/Brats-bavaria',
-        technologies: ['TypeScript', 'Next.js',  'Supabase', 'Stripe'],
-        category: 'Full Stack'
+        technologies: ['TypeScript', 'Next.js', 'Supabase', 'Stripe API'],
+        category: 'Full Stack',
+        duration: '3 weeks',
+        teamSize: 'Solo Project',
+        impact: 'Served 200+ users with 100% successful payment processing rate'
     },
     {
         title: 'Tadpool',
-        description: 'Dating App with Real-time Distance & Matching',
-        summary: 'Mobile dating application with swipe functionality, real-time distance matching, and user preferences',
+        description: 'Mobile Dating App with Distance-based Matching',
+        summary: 'Cross-platform dating app with AWS Rekognition for photo verification and real-time geolocation',
         bgImage: `${base}/tadpool.png`,
         githubLink: 'https://github.com/chloe-ek/Tadpool-my-part',
-        technologies: ['Flutter', 'Django', 'AWS S3 ', 'Rekognition', 'Docker', 'EC2'],
-        category: 'Mobile App'
+        technologies: ['Flutter', 'Django', 'AWS S3', 'AWS Rekognition', 'Docker', 'EC2'],
+        category: 'Mobile App',
+        duration: '4 weeks',
+        teamSize: '5-person team',
+        impact: 'MVP with AI photo verification and geolocation matching'
     },
     {
         title: 'Chat App',
-        description: 'Real-time Messaging Platform',
-        summary: 'Instant messaging application with group chats, online status, and message history',
+        description: 'Multi-room chat platform with user management',
+        summary: 'Group chat application with user authentication, room management, and message reactions',
         bgImage: `${base}/chatapp.png`,
         liveLink: 'https://chat-app-mxjo.onrender.com',
         githubLink: 'https://github.com/chloe-ek/Chat-app',
         technologies: ['Node.js', 'Express.js', 'MySQL', 'MongoDB', 'EJS'],
-        category: 'Full Stack'
+        category: 'Full Stack',
+        duration: '2 weekss',
+        teamSize: 'Solo Project',
+        impact: 'Built complete user management system with room-based messaging architecture'
     },
     {
         title: 'Assignment Tracker',
-        description: 'Student Task Management Android App',
-        summary: 'Native Android app for tracking assignments, deadlines, and academic progress',
+        description: 'Native Android Task Management Application',
+        summary: 'Feature-rich Android app with custom UI components, local database management, and notification system for academic tracking',
         bgImage: `${base}/AssignmentTracker.png`,
         githubLink: 'https://github.com/chloe-ek/Assignment_tracker',
-        technologies: ['Kotlink', 'Android SDK', 'SQLite'],
-        category: 'Mobile App'
+        technologies: ['Kotlin', 'Android SDK', 'SQLite', 'Material Design'],
+        category: 'Mobile App',
+        duration: '3 weeks',
+        teamSize: 'Solo Project',
+        impact: 'Full CRUD functionality with local data persistence'
     },
     {
         title: 'Dark Night Maze',
-        description: 'Interactive JavaFX Adventure Game',
-        summary: 'Desktop game with dynamic maze generation, character progression, and puzzle solving',
+        description: 'Object-Oriented JavaFX Adventure Game',
+        summary: 'Desktop game demonstrating advanced OOP principles, custom algorithms for maze generation, and JavaFX scene management',
         bgImage: `${base}/darknightmaze.png`,
         githubLink: 'https://github.com/chloe-ek/Dark_Night_Maze',
         technologies: ['Java', 'JavaFX', 'Maven', 'JUnit5'],
-        category: 'Desktop Game'
+        category: 'Desktop Game',
+        duration: '6 weeks',
+        teamSize: 'Solo Project',
+        impact: 'Clean architecture following SOLID principles with custom algorithms and realistic lighting'
     },
     {
         title: 'Neighbourly',
@@ -123,8 +146,10 @@ export const workData = [
         bgImage: `${base}/neighbourly.png`,
         liveLink: 'https://comp1800-neighbourly.web.app',
         githubLink: 'https://github.com/chloe-ek/neighbourly',
-        technologies: ['React', 'Firebase', 'Google Maps API', 'Material-UI'],
-        category: 'Full Stack'
+        technologies: ['HTML', 'Tailwind CSS', 'Firebase', 'Google Maps API'],
+        category: 'Full Stack',
+        duration: '4 weeks',
+        teamSize: '3-person Team',
     },
 ];
 

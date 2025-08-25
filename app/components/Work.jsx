@@ -76,9 +76,16 @@ const Work = () => {
 
               <div className="p-6 flex-1 flex flex-col">
                 <div className="flex justify-between items-start mb-3">
-                  <h3 className="font-bold text-xl text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
-                    {project.title}
-                  </h3>
+                  <div className="flex items-center gap-2 flex-1">
+                    <h3 className="font-bold text-xl text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
+                      {project.title}
+                    </h3>
+                    {project.status === 'In Development' && (
+                      <span className="bg-orange-100 text-orange-700 text-xs px-2 py-1 rounded-full font-medium border border-orange-200">
+                        In Development
+                      </span>
+                    )}
+                  </div>
                   <div className="flex gap-2 ml-4 flex-shrink-0">
                     {project.liveLink && (
                       <img
@@ -110,6 +117,35 @@ const Work = () => {
                 <p className="text-gray-500 text-xs mb-4 leading-relaxed flex-1">
                   {project.summary}
                 </p>
+
+                {(project.duration || project.teamSize || project.impact) && (
+                  <div className="mb-4 space-y-1">
+                    {project.duration && (
+                      <div className="flex items-center text-xs text-gray-500">
+                        <svg className="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        </svg>
+                        {project.duration}
+                      </div>
+                    )}
+                    {project.teamSize && (
+                      <div className="flex items-center text-xs text-gray-500">
+                        <svg className="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                        {project.teamSize}
+                      </div>
+                    )}
+                    {project.impact && (
+                      <div className="flex items-center text-xs text-blue-600 font-medium">
+                        <svg className="w-3 h-3 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6" />
+                        </svg>
+                        {project.impact}
+                      </div>
+                    )}
+                  </div>
+                )}
 
                 <div className="flex flex-wrap gap-2 mt-auto">
                   {project.technologies.map((tech, techIndex) => (
