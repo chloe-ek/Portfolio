@@ -49,65 +49,82 @@ export const assets = {
 };
 
 export const workData = [
+        {
+        title: 'DiVi (In Developement)',
+        description: 'Expense Tracker for shared expenses',
+        summary: 'Mobile-first shared expense tracking with real-time collaboration',
+        bgImage: `${base}/DIVI.png`,
+        liveLink: 'https://divi-ai-4l5m.vercel.app/',
+        githubLink: 'https://github.com/chloe-ek/Divi-Ai',
+        technologies: ['TypeScript', 'Next.js', 'Supabase', 'CSS'],
+        category: 'Full Stack'
+    },
+        {
+        title: 'PrepTalk AI (In Developement)',
+        description: 'AI-powered platform for preparing for mock interviews',
+        summary: 'Interactive AI interview practice platform with voice-based Q&A and personalized feedback',
+        bgImage: `${base}/preptalk.png`,
+        liveLink: 'https://prep-talk-ai-three.vercel.app/',
+        githubLink: 'https://github.com/chloe-ek/PrepTalk_ai',
+        technologies: ['Next.js', 'Tailwind', 'Firebase' ,'Vapi'],
+        category: 'Full Stack'
+    },
     {
         title: 'Brats & Bavaria',
-        description: 'Car Event Website',
+        description: 'Car enthusiast event registration and management system',
+        summary: 'End-to-end car event management platform with submission forms, admin dashboard, and automated payment processing',
         bgImage: `${base}/Bratsandbavaria.png`,
         liveLink: 'https://bratsandbavaria.com',
         githubLink: 'https://github.com/chloe-ek/Brats-bavaria',
-
+        technologies: ['TypeScript', 'Next.js',  'Supabase', 'Stripe'],
+        category: 'Full Stack'
     },
     {
         title: 'Tadpool',
-        description: 'Dating App',
+        description: 'Dating App with Real-time Distance & Matching',
+        summary: 'Mobile dating application with swipe functionality, real-time distance matching, and user preferences',
         bgImage: `${base}/tadpool.png`,
         githubLink: 'https://github.com/chloe-ek/Tadpool-my-part',
-
-    },
-    {
-        title: 'Real Estate',
-        description: 'Web Site',
-        bgImage: `${base}/realEstate.png`,
-        liveLink: 'https://realestate-gek4.onrender.com/',
-        githubLink: 'https://github.com/chloe-ek/RealEstate_website',
-
+        technologies: ['Flutter', 'Django', 'AWS S3 ', 'Rekognition', 'Docker', 'EC2'],
+        category: 'Mobile App'
     },
     {
         title: 'Chat App',
-        description: 'Chat Web',
+        description: 'Real-time Messaging Platform',
+        summary: 'Instant messaging application with group chats, online status, and message history',
         bgImage: `${base}/chatapp.png`,
         liveLink: 'https://chat-app-mxjo.onrender.com',
         githubLink: 'https://github.com/chloe-ek/Chat-app',
-
+        technologies: ['Node.js', 'Express.js', 'MySQL', 'MongoDB', 'EJS'],
+        category: 'Full Stack'
     },
     {
         title: 'Assignment Tracker',
-        description: 'Android App',
+        description: 'Student Task Management Android App',
+        summary: 'Native Android app for tracking assignments, deadlines, and academic progress',
         bgImage: `${base}/AssignmentTracker.png`,
         githubLink: 'https://github.com/chloe-ek/Assignment_tracker',
-
-    },
-    {
-        title: 'Pennywise',
-        description: 'Finance App',
-        bgImage: `${base}/pennywise.png`,
-        githubLink: 'https://github.com/chloe-ek/pennywise',
-
+        technologies: ['Kotlink', 'Android SDK', 'SQLite'],
+        category: 'Mobile App'
     },
     {
         title: 'Dark Night Maze',
-        description: 'JavaFX Game',
+        description: 'Interactive JavaFX Adventure Game',
+        summary: 'Desktop game with dynamic maze generation, character progression, and puzzle solving',
         bgImage: `${base}/darknightmaze.png`,
         githubLink: 'https://github.com/chloe-ek/Dark_Night_Maze',
-
+        technologies: ['Java', 'JavaFX', 'Maven', 'JUnit5'],
+        category: 'Desktop Game'
     },
     {
         title: 'Neighbourly',
-        description: 'Community App',
+        description: 'Community Connection Platform',
+        summary: 'Local community app for neighborhood events, services, and resident networking',
         bgImage: `${base}/neighbourly.png`,
         liveLink: 'https://comp1800-neighbourly.web.app',
-        githubLink: 'https://comp1800-neighbourly.web.app',
-
+        githubLink: 'https://github.com/chloe-ek/neighbourly',
+        technologies: ['React', 'Firebase', 'Google Maps API', 'Material-UI'],
+        category: 'Full Stack'
     },
 ];
 

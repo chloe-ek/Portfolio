@@ -34,7 +34,7 @@ const Work = () => {
         transition={{ duration: 0.5, delay: 0.7 }}
         className="text-center max-w-3xl mx-auto mt-5 mb-20 font-Ovo"
       >
-          Click on any project to view the live demo.
+          Click a project to see the live demo or explore the code.
           
       </motion.p>
 
@@ -42,46 +42,94 @@ const Work = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.9, delay: 0.3 }}
-        className="grid grid-cols-auto gap-6 my-10"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 my-10"
       >
         {workData.map((project, index) => {
           const content = (
             <motion.div
-              whileHover={{ scale: 1.05 }}
+              whileHover={{ 
+                y: -8,
+                boxShadow: "0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1)"
+              }}
               key={index}
-              className="rounded-lg overflow-hidden shadow-sm group transition duration-300 cursor-pointer"
+              className="rounded-2xl overflow-hidden shadow-lg group transition-all duration-500 cursor-pointer bg-white border border-gray-100 flex flex-col h-full"
             >
-              <div
-                className="aspect-square bg-no-repeat bg-cover bg-center"
-                style={{ backgroundImage: `url(${project.bgImage})` }}
-              ></div>
+              <div className="relative">
+                <div
+                  className="aspect-square bg-no-repeat bg-cover bg-center group-hover:scale-105 transition-transform duration-500"
+                  style={{ backgroundImage: `url(${project.bgImage})` }}
+                />
+                <div className="absolute top-4 left-4">
+                  <span className="bg-blue-600 text-white text-xs px-3 py-1 rounded-full font-medium">
+                    {project.category}
+                  </span>
+                </div>
+                {project.liveLink && (
+                  <div className="absolute top-4 right-4">
+                    <div className="bg-green-500 text-white text-xs px-3 py-1 rounded-full font-medium flex items-center gap-1">
+                      <span className="w-2 h-2 bg-white rounded-full animate-pulse"></span>
+                      Live
+                    </div>
+                  </div>
+                )}
+              </div>
 
-              <div className="bg-white px-5 py-3 group-hover:bg-neutral-100">
-                <div className="flex justify-between items-start">
-                  <div>
-                    <h2 className="font-semibold text-base">{project.title}
-                        {project.liveLink && (
-                        <img
-                          src={assets.live1}
-                          alt="Live"
-                          title="Live Demo"
-                          className="ml-1 w-5 h-5 opacity-100 inline-block hover:scale-110 transition"
-                        />
-                      )}
-                    </h2>
-                    <p className="text-sm text-gray-700 flex items-center gap-2">
-                      {project.description}
-                      {project.githubLink && ( 
-                        <a
-                          href={project.githubLink}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          title="GitHub Repo"
-                        >
-                          <img src={assets.github_icon} alt="GitHub" className="w-4 hover:scale-110 transition" />
-                        </a>
-                      )}
-                    </p>
+              <div className="p-6 flex-1 flex flex-col">
+                <div className="flex justify-between items-start mb-3">
+                  <h3 className="font-bold text-xl text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
+                    {project.title}
+                  </h3>
+                  <div className="flex gap-2 ml-4 flex-shrink-0">
+                    {project.liveLink && (
+                      <img
+                        src={assets.live1}
+                        alt="Live Demo"
+                        title="Live Demo Available"
+                        className="w-5 h-5 opacity-70 group-hover:opacity-100 transition-opacity"
+                      />
+                    )}
+                    {project.githubLink && (
+                      <a
+                        href={project.githubLink}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        title="View Source Code"
+                        onClick={(e) => e.stopPropagation()}
+                        className="opacity-70 hover:opacity-100 transition-opacity"
+                      >
+                        <img src={assets.github_icon} alt="GitHub" className="w-5 h-5 hover:scale-110 transition-transform" />
+                      </a>
+                    )}
+                  </div>
+                </div>
+                
+                <p className="text-gray-600 text-sm mb-3 leading-relaxed">
+                  {project.description}
+                </p>
+
+                <p className="text-gray-500 text-xs mb-4 leading-relaxed flex-1">
+                  {project.summary}
+                </p>
+
+                <div className="flex flex-wrap gap-2 mt-auto">
+                  {project.technologies.map((tech, techIndex) => (
+                    <span
+                      key={techIndex}
+                      className="bg-gray-100 text-gray-700 text-xs px-3 py-1 rounded-full font-medium border border-gray-200 group-hover:bg-blue-50 group-hover:text-blue-700 group-hover:border-blue-200 transition-all duration-300"
+                    >
+                      {tech}
+                    </span>
+                  ))}
+                </div>
+              </div>
+
+              <div className="px-6 pb-6">
+                <div className="border-t border-gray-100 pt-4">
+                  <div className="flex justify-between items-center text-xs text-gray-500">
+                    <span>Click to view {project.liveLink ? 'live demo' : 'source code'}</span>
+                    <svg className="w-4 h-4 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
                   </div>
                 </div>
               </div>
@@ -98,19 +146,35 @@ const Work = () => {
             >
               {content}
             </a>
+          ) : project.githubLink ? (
+            <a
+              href={project.githubLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              key={index}
+              className="block"
+            >
+              {content}
+            </a>
           ) : (
             content
           );
         })}
       </motion.div>
 
-      <a
+      <motion.a
         href="https://github.com/chloe-ek"
-        className="w-max flex items-center justify-center gap-2 text-gray-700 cursor-pointer
-        border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover duration-500"
+        target="_blank"
+        rel="noopener noreferrer"
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+        className="w-max flex items-center justify-center gap-3 bg-black text-white bg-gradient-to-r black cursor-pointer rounded-full py-4 px-8 mx-auto my-20 hover:from-blue-700 hover:to-purple-700 transition-all duration-500 shadow-lg hover:shadow-xl font-medium"
       >
-        Show more <img src={assets.right_arrow_bold} alt="Right Arrow" className="w-4" />
-      </a>
+        View All Projects on GitHub
+        <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+        </svg>
+      </motion.a>
     </motion.div>
   );
 };
