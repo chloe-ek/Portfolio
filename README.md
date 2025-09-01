@@ -1,30 +1,26 @@
 # 🌐 Portfolio
 
-This is my personal developer portfolio built with [Next.js](https://nextjs.org/), deployed on GitHub Pages.
-I keep adding new projects as I build them.
+My personal developer portfolio showcasing full-stack projects with clean UI and modern tech stack.
+
 
 ## 📸 Live Demo
 👉 [https://chloe-ek.github.io/Portfolio/](https://chloe-ek.github.io/Portfolio/)
 
-## 🚀 Features
+## 🚀 What's Inside
 
-- Clean responsive UI
-- Project showcase with screenshots
-- Smooth scroll + motion animations
-- Dark mode(in progress)
-- GitHub Pages static deployment
+- **Completed Projects**: Full-stack web apps and mobile apps with live demos and source code
+- **Work in Progress**: Ongoing projects showcasing continuous learning
+- **Clean responsive UI** with smooth scroll animations
 
 ## 🛠 Tech Stack
 
 - **Frontend**: Next.js 15, Tailwind CSS, Framer Motion
-- **Deployment**: GitHub Pages (`output: 'export'`)
+- **Deployment**: GitHub Pages with static export 
 
 ## 🙋🏻‍♀️ About Me
 
-I'm studying Computer Systems Technology at BCIT and enjoy creating web applications that solve real problems.  
-Take a look at the live site to explore my recent projects!
-
-Check out the live site to explore more!
+Computer Systems Technology student at BCIT, focused on creating web applications that solve real problems.  
+**Currently seeking**: Junior developer opportunities in Vancouver area.
 
 ## ✍ Author
 
