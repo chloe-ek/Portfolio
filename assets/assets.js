@@ -46,6 +46,7 @@ export const assets = {
     github_icon: `${base}/github.png`,
     live1: `${base}/live1.png`,
     live2: `${base}/live2.png`,
+    resume_pdf: `${base}/Chloe_Kwon_resume.pdf`,
 };
 
 export const workData = [
