@@ -50,7 +50,32 @@ export const assets = {
 };
 
 export const workData = [
-        {
+    {
+        title: 'Boats Animator',
+        description: 'Open-Source Stop-Motion Animation Editor',
+        summary: 'Contributed major UI/UX and state-management features to a production stop-motion editor, implementing multi-frame selection, insert mode, and automatic take relabeling',
+        bgImage: `${base}/Boat.png`,
+        githubLink: 'https://github.com/chloe-ek/boats-animator',
+        technologies: ['React', 'TypeScript', 'Redux', 'Electron', '@dnd-kit', 'Node.js'],
+        category: 'Open Source',
+        duration: '4 months',
+        teamSize: 'Open Source Contributor',
+        impact: 'Fixed critical video export failures and engineered batch editing workflows used in production'
+    },
+    {
+        title: 'PrepTalk AI',
+        description: 'AI-Powered Interview Practice Platform',
+        summary: 'Voice-interactive AI interview coach with personalized feedback, question analysis, and performance tracking',
+        bgImage: `${base}/preptalk.png`,
+        liveLink: 'https://prep-talk-ai-three.vercel.app/',
+        githubLink: 'https://github.com/chloe-ek/PrepTalk_ai',
+        technologies: ['Next.js', 'Tailwind CSS', 'Firebase', 'Vapi AI'],
+        category: 'Full Stack',
+        duration: '2 months',
+        teamSize: 'Solo Project',
+        impact: 'Voice AI integration and real-time feedback system implemented'
+    },
+            {
         title: 'DiVi',
         description: 'Shared Expense Tracker with Real-time Collaboration',
         summary: 'Mobile-first expense splitting app with group management, receipt scanning, and automatic calculations',
@@ -63,20 +88,6 @@ export const workData = [
         duration: 'In Development...',
         teamSize: 'Solo Project',
         impact: 'MVP with core splitting features completed'
-    },
-        {
-        title: 'PrepTalk AI',
-        description: 'AI-Powered Interview Practice Platform',
-        summary: 'Voice-interactive AI interview coach with personalized feedback, question analysis, and performance tracking',
-        bgImage: `${base}/preptalk.png`,
-        liveLink: 'https://prep-talk-ai-three.vercel.app/',
-        githubLink: 'https://github.com/chloe-ek/PrepTalk_ai',
-        technologies: ['Next.js', 'Tailwind CSS', 'Firebase', 'Vapi AI'],
-        category: 'Full Stack',
-        status: 'In Development',
-        duration: 'In Development...',
-        teamSize: 'Solo Project',
-        impact: 'Voice AI integration and real-time feedback system implemented'
     },
     {
         title: 'Brats & Bavaria',
